@@ -39,6 +39,41 @@ Options:
 ```
 
 
+## Example
+
+```shell
+~ $ pynew example-project
+Initializing virtual environment...
+Installing dev packages...
+Created project at example-project
+
+~ $ exa -T example-project
+example-project
+├── example_project
+│  ├── __init__.py
+│  └── __main__.py
+├── LICENSE
+├── Pipfile
+├── Pipfile.lock
+├── README.md
+└── setup.py
+
+~ $ cat example-project/setup.py
+from setuptools import setup, find_packages
+
+setup(
+    name='example_project',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[],
+    entry_points='''
+        [console_scripts]
+        example-project=example_project.__main__:main
+    ''',
+)
+```
+
+
 ## Available licenses
 
 + `agpl-3.0`

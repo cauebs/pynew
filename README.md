@@ -21,7 +21,7 @@ Automate the creation of new Python projects.
 I recommend installing with [pipsi](https://github.com/mitsuhiko/pipsi), but pip is also ok.
 
 ```shell
-~ $ pipsi install git+https://github.com/cauebs/pynew#egg=pynew
+~ $ pipsi install pynew
 ```
 
 

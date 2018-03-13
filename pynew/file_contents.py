@@ -10,7 +10,7 @@ BIN_SETUP_PY = '''from setuptools import setup, find_packages
 
 setup(
     name='{package_name}',
-    version={version}
+    version='{version}',
     packages=find_packages(),
     install_requires=[],
     entry_points=\'\'\'
@@ -25,7 +25,7 @@ LIB_SETUP_PY = '''from setuptools import setup, find_packages
 
 setup(
     name='{package_name}',
-    version={version}
+    version='{version}',
     packages=find_packages(),
     install_requires=[],
 )

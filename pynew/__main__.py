@@ -9,7 +9,7 @@ from .licenses import LICENSES
 from .utils import run
 
 
-@click.command()
+@click.command(help='Create a new Python project')
 @click.argument('project_name')
 @click.option('--lib', is_flag=True, default=False,
               help='Create a library instead of an executable')

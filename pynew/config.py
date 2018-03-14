@@ -6,12 +6,14 @@ from pathlib import Path
 from .utils import run
 
 
-CONFIG_DIR = Path(environ['XDG_CONFIG_HOME'], 'pynew')
+try:
+    CONFIG_DIR = Path(environ['XDG_CONFIG_HOME'], 'pynew')
+except KeyError:
+    CONFIG_DIR = Path.home() / '.config' / 'pynew'
 
 try:
     with open(CONFIG_DIR / 'config.json') as f:
         config = json.load(f)
-
 except FileNotFoundError:
     config = {}
 

@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 setup(
     name='pynew',
     description='Automate Python project creation',
-    version='0.1.1',
+    version='0.1.2',
     author='Cauê Baasch de Souza',
     author_email='cauebs@pm.me',
     url='https://github.com/cauebs/pynew',
